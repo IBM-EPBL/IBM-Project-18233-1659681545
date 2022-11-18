@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Predictions</title>
+        
+        <link rel="stylesheet" href="../static/Style.css">    
+        
+    </head>
+
+    <body>
+       
+          
+
+       
+        <div class="formbox">    
+            <form action="/predict" method="post">
+            <h2>Enter Your Details</h2>
+            
+           
+            <div class="detail">
+                <input type="text" name="AGE" required="">
+                <label>AGE</label>
+
+            </div>
+            <div class="detail">
+                <input type="text" name="BU" required="">
+                <label>Blood Urea</label>
+            
+            </div>
+            <label for="coronatrea">Are You Affected by coronatrea ?</label>
+                <select name="coronatrea" id="coronatrea">
+                <option value="1">YES</option>
+                <option value="0">NO</option></select><br>
+                <label for="Anemia">Are You Affected by Anemia ?</label>
+                <select name="Anemia" id="Anemia">
+                <option value="1">YES</option>
+                <option value="0">NO</option></select><br> 
+
+            <label for="PUS">PUS Cell</label>  
+            <select name="PUS" id="PUS">
+            <option value="1">Normal</option>
+            <option value="0">Abnormal</option></select><br>
+
+            <label for="Red Blood Cell">Red Blood Cell</label>   
+            <select name="Red Blood Cell" id="Red Blood Cell">
+                <option value="1">Normal</option>
+                <option value="0">Abnormal</option></select><br>
+                
+            <div class="detail">
+            </div>
+           
+             
+             
+             <label for="Diabetesmellitus">Are you affected by Diabetes mellitus ?</label>
+                <select name="Diabetesmellitus" id="Diabetesmellitus">
+                <option value="1">YES</option>
+                <option value="0">NO</option></select><br>
+              
+                <label for="Pedal Edema">Pedal Edema</label>   
+                <select name="Pedal Edema" id="Pedal Edema">
+                    <option value="1">Normal</option>
+                    <option value="0">Abnormal</option></select><br>
+                
+                
+                
+
+             
+                
+               
+                
+            
+            
+             <div class="formbox"> 
+              <input type="Submit" value="Submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </form>
+            </div>  
+              
+              
+              
+            
+        </form>
+        </div>
+          <div>
+            {{pred}}
+          </div>
+        
+    </body>
+</html>
